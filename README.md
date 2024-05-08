@@ -1,6 +1,6 @@
 # DataGovRD - Interfaz de Usuario
 
-Este proyecto fue creado con [Create React App](https://github.com/facebook/create-react-app).
+Este proyecto fue creado con [Vite Js](https://vitejs.dev/guide/).
 
 ## Scripts Disponibles
 

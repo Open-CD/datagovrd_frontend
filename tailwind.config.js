@@ -9,7 +9,12 @@ export default {
 
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        "c-blue-black-800": "#002D62",
+        "c-gray-100": "#F3F8FF",
+      },
+    },
   },
   darkMode: "class",
   plugins: [nextui()]

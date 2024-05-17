@@ -1,4 +1,5 @@
 import ArrowDown from "./arrow-down.png";
+import ArrowRight from "./arrow-right.png";
 import Economy from "./economy.png";
 import Agriculture from "./agriculture.png";
 import Education from "./education.png";
@@ -11,6 +12,7 @@ import Transport from "./transport.png";
 
 const icons = {
   ArrowDown,
+  ArrowRight,
   Economy,
   Agriculture,
   Education,

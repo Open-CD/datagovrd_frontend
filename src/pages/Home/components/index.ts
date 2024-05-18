@@ -1,0 +1,1 @@
+export { default as SectorsCard } from "./SectorsCard/SectorsCard";

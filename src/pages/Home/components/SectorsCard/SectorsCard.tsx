@@ -21,6 +21,11 @@ const SectorsCard = () => {
       img: icons.Transport,
     },
     {
+      name: "Infraestructura",
+      text: "Observe la coordinación de esfuerzos humanos y financieros en proyectos de infraestructura para optimizar la transparencia y efectividad.",
+      img: icons.Infrastructure,
+    },
+    {
       name: "Agricultura",
       text: "Analice cómo interactúan producción agrícola y gestión de inventarios y fondos para impulsar la sostenibilidad y eficiencia del sector.",
       img: icons.Agriculture,
@@ -35,16 +40,12 @@ const SectorsCard = () => {
       text: "Examine la asignación de recursos en turismo para optimizar la atracción de visitantes y su impacto económico.",
       img: icons.Tourism,
     },
-    {
-      name: "Infraestructura",
-      text: "Observe la coordinación de esfuerzos humanos y financieros en proyectos de infraestructura para optimizar la transparencia y efectividad.",
-      img: icons.Infrastructure,
-    },
-    {
-      name: "Energía",
-      text: "Revise la distribución de recursos financieros y humanos en energía, destacando su rol en la viabilidad de proyectos renovables.",
-      img: icons.Energy,
-    },
+
+    // {
+    //   name: "Energía",
+    //   text: "Revise la distribución de recursos financieros y humanos en energía, destacando su rol en la viabilidad de proyectos renovables.",
+    //   img: icons.Energy,
+    // },
     {
       name: "Medio Ambiente",
       text: "Descubra cómo se emplean fondos y personal en proyectos medioambientales para fortalecer la gestión de recursos y conservación.",
@@ -65,9 +66,9 @@ const SectorsCard = () => {
   // };
 
   return (
-    <div className="centros-container flex flex-col items-center bg-c-blue-black-800 rounded-[5em] text-white m-5 mt-10 ">
+    <div className="centros-container flex flex-col items-center bg-c-blue-black-800 rounded-[5em] text-white m-5 mt-10 mx-10">
       <p className="uppercase text-center font-bold text-3xl pt-14">Sectores</p>
-      <div className={`grid grid-cols-3 auto-cols-min p-14 gap-10 transition-height duration-300 ease-in-out ${showAll ? "h-[55rem]" : "h-[24rem]"} overflow-hidden`} >
+      <div className={`grid grid-cols-4 auto-cols-min p-14 gap-10 transition-height duration-300 ease-in-out ${showAll ? "h-[34rem]" : "h-[22rem]"} overflow-hidden`} >
         {sectors.map(({ name, text, img }, index) => (
           <div key={index} className="text-center">
             <img src={img} alt="" className={`mx-auto mb-2  ${!showAll && index >= 3 ? "opacity-35" : ""}`} />

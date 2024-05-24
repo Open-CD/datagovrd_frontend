@@ -15,6 +15,7 @@ import {
   DropdownItem,
 } from "@nextui-org/react";
 import { logos, icons } from "../../assets";
+import './Header.css'
 
 export default function App() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
@@ -28,8 +29,8 @@ export default function App() {
   ];
 
   return (
-    <Navbar className="bg-c-gray-100" onMenuOpenChange={setIsMenuOpen}>
-      <NavbarContent>
+    <Navbar className="bg-c-gray-100 flex justify-between px-10" onMenuOpenChange={setIsMenuOpen} >
+      <NavbarContent className="">
         <NavbarMenuToggle
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
           className="sm:hidden text-c-blue-black-800"
@@ -39,7 +40,7 @@ export default function App() {
         </NavbarBrand>
       </NavbarContent>
 
-      <NavbarContent className="hidden sm:flex gap-4" justify="center">
+      <NavbarContent className="hidden  sm:flex gap-4" justify="center">
         <Dropdown>
           <NavbarItem>
             <DropdownTrigger>
@@ -95,6 +96,7 @@ export default function App() {
           </Link>
         </NavbarItem>
       </NavbarContent>
+      
       <NavbarMenu>
         {menuItems.map((item, index) => (
           <NavbarMenuItem key={`${item}-${index}`}>

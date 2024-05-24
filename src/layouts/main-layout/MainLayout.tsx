@@ -12,7 +12,7 @@ const MainLayout: React.FC<MainLayoutProps> = ({ children }) => {
         <Header />
       </div>
 
-      <div className="flex-grow max-w-screen-lg mx-auto px-5 w-full ">
+      <div className="flex-grow max-w-[1444px] mx-auto px-5 w-full ">
         <div>{children}</div>
       </div>
 

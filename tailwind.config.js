@@ -12,6 +12,8 @@ export default {
     extend: {
       colors: {
         "c-blue-black-800": "#002D62",
+        "c-blue-black-900": "#02033B",
+        "c-red-600": "#CE1126",
         "c-gray-100": "#F3F8FF",
         "c-red-dark-800": "#CE1126",
       },

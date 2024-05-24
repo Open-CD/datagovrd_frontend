@@ -3,5 +3,9 @@
 @tailwind utilities;
 
 .bordered {
-    border: solid 1px red;
+  border: solid 1px red;
+}
+
+.slick-slide > div {
+  margin: 0 10px;
 }

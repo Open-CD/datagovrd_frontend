@@ -9,6 +9,15 @@ import Health from "./health.png";
 import Infrastructure from "./infrastructure.png";
 import Tourism from "./tourism.png";
 import Transport from "./transport.png";
+import FlexibleDownloads from "./flexible-downloads.png";
+import SimplifiedData from "./simplified-data.png";
+import RealTimeData from "./real-time-data.png";
+import LeftCircularArrow from "./left-circular-arrow.png";
+import AdvancedFiltering from "./advanced-filtering.png";
+import InteractiveMaps from "./interactive-maps.png";
+import PersonalizationOfData from "./personalization-of-data.png";
+import ReportsAutomated from "./reports-automated.png";
+import UpdatesContinuous from "./updates-continuous.png";
 
 const icons = {
   ArrowDown,
@@ -22,6 +31,15 @@ const icons = {
   Infrastructure,
   Tourism,
   Transport,
+  FlexibleDownloads,
+  SimplifiedData,
+  RealTimeData,
+  AdvancedFiltering,
+  LeftCircularArrow,
+  InteractiveMaps,
+  PersonalizationOfData,
+  ReportsAutomated,
+  UpdatesContinuous,
 };
 
 export default icons;

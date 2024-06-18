@@ -16,7 +16,7 @@ const SampleNextArrow = (props: Arrow) => {
       alt=""
       className={
         className +
-        " w-[25px] h-[40px] opacity-90 hover:opacity-100 scale-x-[-1] top-[40%] right-[-40px]"
+        " w-[25px] h-[40px] opacity-90 hover:opacity-100 scale-x-[-1] top-[40%] md:right-[-40px]"
       }
       onClick={onClick}
     />
@@ -31,7 +31,7 @@ const SamplePrevArrow = (props: Arrow) => {
       alt=""
       className={
         className +
-        " w-[25px] h-[40px] opacity-90 hover:opacity-100 top-[50%] left-[-40px]"
+        " w-[25px] h-[40px] opacity-90 hover:opacity-100 top-[50%] md:left-[-40px]"
       }
       onClick={onClick}
     />
@@ -43,10 +43,29 @@ const FeatureCarousel = () => {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 3,
     slidesToScroll: 1,
-    nextArrow: <SampleNextArrow className={""} onClick={() => {}} />,
-    prevArrow: <SamplePrevArrow className={""} onClick={() => {}} />,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 4000,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+    ],
+    nextArrow: <SampleNextArrow className={""} onClick={() => { }} />,
+    prevArrow: <SamplePrevArrow className={""} onClick={() => { }} />,
   };
 
   const features = [
@@ -98,9 +117,9 @@ const FeatureCarousel = () => {
       {features.map(({ name, text, img }, index) => (
         <div
           key={index}
-          className="bg-c-blue-black-800 text-white p-8 flex flex-col justify-between items-start rounded-xl min-h-[16rem]"
+          className="bg-c-blue-black-800 text-white p-5 md:p-8 flex flex-col justify-between items-start rounded-xl min-h-[19rem] md:min-h-[19rem] xl:min-h-[17rem]"
         >
-          <div className="flex items-center gap-2">
+          <div className="flex items-center md:gap-2">
             <img src={img} alt={name} width={100} />
             <p className="text-lg font-bold">{name}</p>
           </div>

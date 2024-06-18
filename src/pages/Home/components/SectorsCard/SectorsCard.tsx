@@ -65,21 +65,22 @@ const SectorsCard = () => {
   //   }
   // };
 
+
   return (
-    <div className="centros-container flex flex-col items-center bg-c-blue-black-800 rounded-[5em] text-white m-5 mt-10 mx-10">
-      <p className="uppercase text-center font-bold text-3xl pt-14">Sectores</p>
-      <div className={`grid grid-cols-4 auto-cols-min p-14 gap-10 transition-height duration-300 ease-in-out ${showAll ? "h-[34rem]" : "h-[22rem]"} overflow-hidden`} >
+    <div className="centros-container  flex flex-col items-center bg-c-blue-black-800 rounded-[2em] md:rounded-[5em] text-white md:m-5 mt-10 md:mx-10">
+      <p className="uppercase text-center font-bold text-2xl md:text-3xl pt-14">Sectores</p>
+      <div className={`grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 auto-cols-min p-7 md:p-14 gap-10 transition-height duration-300 ease-in-out ${showAll ? "h-[124rem] sm:h-[59rem] md:h-[57rem] lg:h-[34rem]" : "h-[22rem]"} overflow-hidden`} >
         {sectors.map(({ name, text, img }, index) => (
-          <div key={index} className="text-center">
+          <div key={index} className="text-center" >
             <img src={img} alt="" className={`mx-auto mb-2  ${!showAll && index >= 3 ? "opacity-35" : ""}`} />
             <p className="font-bold">{name}</p>
-            <p className="text-sm">{text}</p>
+            <p className="text-sm max-w-80">{text}</p>
           </div>
         ))}
       </div>
       <Button
         radius="full"
-        className="bg-white font-semibold text-c-blue-black-800 py-2 px-10  uppercase relative bottom-10"
+        className="bg-white font-semibold text-c-blue-black-800 py-2 px-10 mb-10  uppercase relative bottom-"
         onClick={handleShowAll}
       >
         {showAll ? "Ver Menos" : "Ver Más"}

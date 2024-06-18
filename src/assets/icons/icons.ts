@@ -18,6 +18,13 @@ import InteractiveMaps from "./interactive-maps.png";
 import PersonalizationOfData from "./personalization-of-data.png";
 import ReportsAutomated from "./reports-automated.png";
 import UpdatesContinuous from "./updates-continuous.png";
+import Download from "./download.png";
+import DescriptiveStatistics from "./descriptive-statistics.png";
+import HeatMap from "./heat-map.png";
+import RawData from "./raw-data.png";
+import PreProcessedData from "./pre-processed-data.png";
+
+
 
 const icons = {
   ArrowDown,
@@ -40,6 +47,11 @@ const icons = {
   PersonalizationOfData,
   ReportsAutomated,
   UpdatesContinuous,
+  Download,
+  DescriptiveStatistics,
+  HeatMap,
+  RawData,
+  PreProcessedData,
 };
 
 export default icons;

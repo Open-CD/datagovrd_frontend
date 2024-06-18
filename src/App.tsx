@@ -1,12 +1,12 @@
 import "./App.css";
 import { MainLayout } from "./layouts";
-import { Home } from "./pages";
+import { AppRoutes } from "./routes";
 
 function App() {
   return (
     <>
       <MainLayout>
-        <Home />
+        <AppRoutes />
       </MainLayout>
     </>
   );
